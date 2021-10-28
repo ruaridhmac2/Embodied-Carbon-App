@@ -1,5 +1,6 @@
 import './App.css';
-import Chart from "react-google-charts";
+import {Chart} from "react-google-charts";
+import DemoApp from './DemoApp'
 
 
 
@@ -29,16 +30,15 @@ const Charts = ({data}) => {
   )
 }
 
-
-
 function App() {
   const data = [['let', 'num'], ['A', 1], ['B', 2], ['c', 3]]
   return (
     <div className="App">
       <header className="App-header">
-        <h1> testing 1,2,3... </h1>
+        <h1> dashboard </h1>
       </header>
       <Charts data = {data}/>
+      <DemoApp></DemoApp>
     </div>
   );
 }
